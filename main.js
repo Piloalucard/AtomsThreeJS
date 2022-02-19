@@ -1,8 +1,8 @@
 //Gustavo P.V 2021
 import './style.css';
-import * as THREE from 'three';
-import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
-import { build } from 'vite';
+import * as THREE from './node_modules/three';
+//import {OrbitControls} from './node_modules/three/examples/jsm/controls/OrbitControls';
+
 
 const scene = new THREE.Scene();
 
@@ -218,5 +218,3 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT,function(){
   console.log("Server up in port: ",PORT)
 });
-
-buil
