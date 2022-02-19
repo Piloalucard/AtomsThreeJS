@@ -2,7 +2,7 @@
 import './style.css';
 import * as THREE from './node_modules/three';
 //import {OrbitControls} from './node_modules/three/examples/jsm/controls/OrbitControls';
-
+import { build } from 'vite';
 
 const scene = new THREE.Scene();
 
@@ -215,7 +215,6 @@ function animate(){
 animate();
 
 const PORT = process.env.PORT || 3000;
-
 app.listen(PORT,function(){
-  console.log("Server port: ",PORT);
+  console.log("Server up in port: ",PORT)
 });
