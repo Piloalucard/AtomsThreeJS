@@ -1,1 +1,1 @@
-web: run dev
+web: bundle exec thin start -p $PORT
