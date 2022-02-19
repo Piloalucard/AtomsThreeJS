@@ -215,5 +215,7 @@ function animate(){
 animate();
 
 const PORT = process.env.PORT || 3000;
-console.log({PORT});
-app.listen(PORT);
+
+app.listen(PORT,function(){
+  console.log("Server port: ",PORT);
+});
